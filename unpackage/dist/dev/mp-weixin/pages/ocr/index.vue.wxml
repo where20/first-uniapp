@@ -1,0 +1,8 @@
+<template name="18a16932">
+  <view class="_view data-v-1ca93410 page-body">
+    <view class="_view data-v-1ca93410 img_wrap">
+      <image src="{{imageUrl}}" mode="aspectFit" class="_image data-v-1ca93410"></image>
+    </view>
+    <button bindtap="handleProxy" class="_button data-v-1ca93410 up" data-eventid="{{'0'}}" data-comkey="{{$k}}">拍照/选取图片识别</button>
+  </view>
+</template>

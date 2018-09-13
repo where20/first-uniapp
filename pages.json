@@ -1,0 +1,73 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/nine/index",
+			"style": {
+				"navigationBarTitleText": "小安帮你识图"
+			}
+		},
+		{
+			"path": "pages/charm/index",
+			"style": {
+				"navigationBarTitleText": "魅力值"
+			}
+		},
+		{
+			"path": "pages/face/index",
+			"style": {
+				"navigationBarTitleText": "颜值分析"
+			}
+		},
+		{
+			"path": "pages/ocr/index",
+			"style": {
+				"navigationBarTitleText": "图片文字识别"
+			}
+		},
+		{
+			"path": "pages/facemerage/index",
+			"style": {
+				"navigationBarTitleText": "疯狂变脸"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "#FFFFFF",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#3cc51f",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+        "color": "#7A7E83",
+        "selectedColor": "#1BA0E1",
+        "borderStyle": "black",
+        "backgroundColor": "#ffffff",
+        "list": [{
+        	"pagePath": "pages/charm/index",
+        	"iconPath": "static/image/icon_API.png",
+        	"selectedIconPath": "static/image/icon_API_HL.png",
+        	"text": "魅力值"
+        },{
+        	"pagePath": "pages/face/index",
+        	"iconPath": "static/image/Face.png",
+        	"selectedIconPath": "static/image/Face_HL.png",
+        	"text": "颜值打分"
+        },
+        {
+        	"pagePath": "pages/nine/index",
+        	"iconPath": "static/image/image.png",
+        	"selectedIconPath": "static/image/image_HL.png",
+        	"text": "图像识别"
+        },{
+        	"pagePath": "pages/ocr/index",
+        	"iconPath": "static/image/OCR.png",
+        	"selectedIconPath": "static/image/OCR_HL.png",
+        	"text": "文字识别"
+        },{
+        	"pagePath": "pages/facemerage/index",
+        	"iconPath": "static/image/facemerge.png",
+        	"selectedIconPath": "static/image/facemerge_HL.png",
+        	"text": "神奇变脸"
+        }]
+    }
+}

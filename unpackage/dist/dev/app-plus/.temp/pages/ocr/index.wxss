@@ -1,0 +1,24 @@
+
+.img_wrap {
+  margin-bottom: 10rpx;
+  width: 100%;
+  min-height: 300rpx;
+  background: #ececec;
+  padding: 20rpx 40rpx;
+  box-sizing: border-box;
+}
+.img_wrap image {
+  width: 100%;
+}
+.up {
+  color: rgb(255, 255, 255);
+  font-size: 20rpx;
+  font-family: 微软雅黑;
+  width: 200rpx;
+  height: 50rpx;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 45rpx;
+  border-radius: 25rpx;
+  background-color: #3cc51f;
+}
