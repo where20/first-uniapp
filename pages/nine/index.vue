@@ -3,7 +3,7 @@
 		<view class="page-section">
 			<view class="uni-row">
 				<view class="grid" v-for="(item, index) in routers" :key="index">
-					<navigator :url="item.id"> 
+					<navigator :url="'aipimg/index?type='+item.type+'&name='+item.name"> 
 						<view class="grid-icon">
 							<image :src="item.icon" mode="scaleToFill"></image>
 						</view>
@@ -23,76 +23,88 @@ export default {
 		routers: [
 			{
 				id: '0',
+				type: 'dish',
 				name: '菜品识别',
 				url: '../../pages/dish/dish',
 				icon: '../../static/image/dishNine.png'
 			},
 			{
 				id: '1',
+				type: 'car',
 				name: '车型识别',
 				url: '../../pages/car/car',
 				icon: '../../static/image/carNine.png'
 			},
 			{
 				id: '2',
+				type: 'plant',
 				name: '植物识别',
 				url: '../../pages/plant/plant',
 				icon: '../../static/image/plantNine.png'
 			},
 			{
 				id: '3',
+				type: 'animal',
 				name: '动物识别',
 				url: '../../pages/animal/animal',
 				icon: '../../static/image/animalNine.png'
 			},
-			{
-				id: '12',
-				name: '快乐相似脸',
-				url: '../../pages/facedetectcrossageface/facedetectcrossageface',
-				icon: '../../static/image/ageNine.png'
-			},
-			{
-				id: '13',
-				name: '花卉识别',
-				url: '../../pages/flower/flower',
-				icon: '../../static/image/flower.png'
-			},
+// 			{
+// 				id: '12',
+// 				type: 'face',
+// 				name: '快乐相似脸',
+// 				url: '../../pages/facedetectcrossageface/facedetectcrossageface',
+// 				icon: '../../static/image/ageNine.png'
+// 			},
+// 			{
+// 				id: '13',
+// 				type: 'flower',
+// 				name: '花卉识别',
+// 				url: '../../pages/flower/flower',
+// 				icon: '../../static/image/flower.png'
+// 			},
 			{
 				id: '6',
+				type: 'general',
 				name: '通用物体识别',
 				url: '../../pages/object/object',
 				icon: '../../static/image/object_HL.png'
 			},
 			{
 				id: '7',
+				type: 'logo',
 				name: '品牌LOGO识别',
 				url: '../../pages/logo/logo',
 				icon: '../../static/image/tag_HL.png'
 			},
-			{
-				id: '14',
-				name: '图片转字符图片',
-				url: '../../pages/image2ascii/image2ascii',
-				icon: '../../static/image/ascii_HL.png'
-			},
-			{
-				id: '9',
-				name: '食材识别',
-				url: '../../pages/ingredient/ingredient',
-				icon: '../../static/image/ingredient_HL.png'
-			},
-			{
-				id: '10',
-				name: '手势识别',
-				url: '../../pages/youtuHT/youtuHT',
-				icon: '../../static/image/youtuHT.png'
-			},
-			{
-				id: '11',
-				name: '手写文字识别',
-				url: '../../pages/youtuHW/youtuHW',
-				icon: '../../static/image/youtuHW.png'
-			}
+// 			{
+// 				id: '14',
+// 				type: 'img',
+// 				name: '图片转字符图片',
+// 				url: '../../pages/image2ascii/image2ascii',
+// 				icon: '../../static/image/ascii_HL.png'
+// 			},
+// 			{
+// 				id: '9',
+// 				type: 'food',
+// 				name: '食材识别',
+// 				url: '../../pages/ingredient/ingredient',
+// 				icon: '../../static/image/ingredient_HL.png'
+// 			},
+// 			{
+// 				id: '10',
+// 				type: 'gesture',
+// 				name: '手势识别',
+// 				url: '../../pages/youtuHT/youtuHT',
+// 				icon: '../../static/image/youtuHT.png'
+// 			},
+// 			{
+// 				id: '11',
+// 				type: 'text',
+// 				name: '手写文字识别',
+// 				url: '../../pages/youtuHW/youtuHW',
+// 				icon: '../../static/image/youtuHW.png'
+// 			}
 		]
 	},
 	methods: {

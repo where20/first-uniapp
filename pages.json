@@ -7,6 +7,12 @@
 			}
 		},
 		{
+			"path": "pages/nine/aipimg/index",
+			"style": {
+				"navigationBarTitleText": "图片识别"
+			}
+		},
+		{
 			"path": "pages/charm/index",
 			"style": {
 				"navigationBarTitleText": "魅力值"

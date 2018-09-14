@@ -29,6 +29,18 @@ function formatLocation(longitude, latitude) {
 		latitude: latitude.toString().split('.')
 	}
 }
+
+function changeToPercent(num) {
+	if(!/\d+\.?\d+/.test(num)){
+		console.log()("必须为数字");
+	}
+	var result = (num * 100).toString(),
+	index = result.indexOf(".");
+	if(index == -1 || result.substr(index+1).length <= 2){
+		return result + "%";
+	}
+	return result.substr(0, index + 3) + "%";
+}
 var dateUtils = {
 	UNITS: {
 		'年': 31557600000,
@@ -69,5 +81,6 @@ var dateUtils = {
 module.exports = {
 	formatTime: formatTime,
 	formatLocation: formatLocation,
+	changeToPercent: changeToPercent,
 	dateUtils: dateUtils
 }
